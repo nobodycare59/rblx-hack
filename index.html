@@ -103,4 +103,80 @@
 <head>
   <title>Roblox Login</title>
   <style>
-    /
+    /<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roblox Login Clone (Educational)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e3e3e3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #d32f2f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-button:hover {
+      background-color: #b71c1c;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Roblox Login</h2>
+    <input type="text" placeholder="Username" class="input-field" id="username">
+    <input type="password" placeholder="Password" class="input-field" id="password">
+    <button class="login-button" onclick="fakeLogin()">Log In</button>
+    <div class="footer">This is a mock project. Not affiliated with Roblox.</div>
+  </div>
+
+  <script>
+    function fakeLogin() {
+      alert("This is a demo page. No login occurs.");
+    }
+  </script>
+</body>
+</html>
+
